@@ -11,6 +11,9 @@ Tags: Comic,Book,WordPress,Theme,Responsiv,grid
 */
 @import 'vendor/normalize';
 @import 'vendor/bootstrap';
+@import 'partials/grid';
+@import 'partials/typography';
+@import 'partials/colors';
 @import 'partials/base';
 @import 'partials/header';
 @import 'partials/homepage';
