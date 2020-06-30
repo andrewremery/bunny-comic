@@ -1,0 +1,51 @@
+.bunny-comic-grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 0em 1em 2em 5em;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    border: 20px #000 solid;
+    grid-template-areas: "bunny-comic-hp-left bunny-comic-hp-right-top" "bunny-comic-hp-left bunny-comic-hp-right-bottom";
+    -webkit-box-shadow: inset 56px 7px 80px -59px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 56px 7px 80px -59px rgba(0,0,0,0.35);
+    box-shadow: inset 56px 7px 80px -59px rgba(0,0,0,0.35);
+}
+.bunny-comic-grid section{ //for testing
+    background-image: url("_images/city-fire.jpg"); 
+    background-color: #cccccc;
+}
+.bunny-comic-grid section h2{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.bunny-comic-hp-left { 
+    grid-area: bunny-comic-hp-left; 
+    clip-path: polygon(0.35% 16.11%, 33% 21%, 68.16% 6.95%, 90.91% 61.8%, 62.32% 87.64%, 9.08% 98.13%);
+    border: 50px #000 solid;
+    -webkit-animation: bunny-comic-hp-left-morph 5s ease-in-out both;
+            animation: bunny-comic-hp-left-morph 5s ease-in-out both;
+            animation-iteration-count: infinite;
+   
+}
+
+.bunny-comic-hp-right-bottom { 
+    grid-area: bunny-comic-hp-right-bottom; 
+    clip-path: polygon(4.74% 16.85%, 31.29% 18.72%, 88.02% 0%, 70.11% 58.80%, 12.48% 92.51%);
+    border: 35px #000 solid;
+}
+
+.bunny-comic-hp-right-top { 
+    grid-area: bunny-comic-hp-right-top; 
+    clip-path: polygon(0.35% 16.11%, 33% 21%, 68.16% 6.95%, 90.91% 61.8%, 62.32% 87.64%, 9.08% 98.13%);
+    border: 45px #000 solid;
+}
+
+.bunny-comic-page-turn {
+    -webkit-animation: bunny-comic-page-turn 1.25s ease-out both;
+            animation: bunny-comic-page-turn 1.25s ease-out both;
+            //animation-iteration-count: infinite;
+}
