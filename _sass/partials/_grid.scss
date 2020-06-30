@@ -26,6 +26,10 @@
     grid-area: bunny-comic-hp-left; 
     clip-path: polygon(0.35% 16.11%, 33% 21%, 68.16% 6.95%, 90.91% 61.8%, 62.32% 87.64%, 9.08% 98.13%);
     border: 50px #000 solid;
+
+    -webkit-animation: bunny-comic-hp-left-morph 5s ease-in-out both;
+            animation: bunny-comic-hp-left-morph 5s ease-in-out both;
+            animation-iteration-count: infinite;
    
 }
 
@@ -47,6 +51,54 @@
             animation: bunny-comic-page-turn 1.25s ease-out both;
             //animation-iteration-count: infinite;
 }
+
+
+@-webkit-keyframes bunny-comic-hp-left-morph {
+    0% {
+        border: 50px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 25px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        width: 80%;
+        transform: rotate(5deg);
+    }
+    75% {
+        border: 25px #000 solid;
+    }
+    100% {
+        border: 50px #000 solid;
+        width: 100%
+    }
+  }
+
+  @keyframes bunny-comic-hp-left-morph {
+    0% {
+        border: 50px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 25px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        width: 80%;
+        transform: rotate(5deg);
+    }
+    75% {
+        border: 25px #000 solid;
+    }
+    100% {
+        border: 50px #000 solid;
+        width: 100%
+    }
+  }
+
+
+
 
 @-webkit-keyframes bunny-comic-page-turn {
     0% {
