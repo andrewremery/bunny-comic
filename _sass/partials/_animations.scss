@@ -158,3 +158,9 @@
         width: 100%;
     }
   }
+
+  .bunny-comic-page-turn {
+    -webkit-animation: bunny-comic-page-turn 1.25s ease-out both;
+            animation: bunny-comic-page-turn 1.25s ease-out both;
+            //animation-iteration-count: infinite;
+}

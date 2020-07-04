@@ -7,7 +7,6 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     gap: 1em;
-    border: 20px #000 solid;
     grid-template-areas: "bunny-comic-hp-left bunny-comic-hp-right-top" "bunny-comic-hp-left bunny-comic-hp-right-bottom";
     -webkit-box-shadow: inset 56px 7px 80px -59px rgba(0,0,0,0.35);
     -moz-box-shadow: inset 56px 7px 80px -59px rgba(0,0,0,0.35);
@@ -53,10 +52,4 @@
     -webkit-animation: bunny-comic-hp-right-bottom-morph 10s ease-in-out both;
             animation: bunny-comic-hp-right-bottom-morph 10s ease-in-out both;
             animation-iteration-count: infinite;
-}
-
-.bunny-comic-page-turn {
-    -webkit-animation: bunny-comic-page-turn 1.25s ease-out both;
-            animation: bunny-comic-page-turn 1.25s ease-out both;
-            //animation-iteration-count: infinite;
 }
