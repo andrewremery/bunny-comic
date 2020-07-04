@@ -2,6 +2,7 @@
     display: grid;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     padding: 0em 1em 2em 5em;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -16,6 +17,10 @@
     background-image: url("_images/city-fire.jpg"); 
     background-color: #cccccc;
 }
+
+.bunny-comic-grid section:hover{
+    animation-play-state: paused;
+}
 .bunny-comic-grid section h2{
     display: flex;
     height: 100%;
@@ -26,22 +31,28 @@
     grid-area: bunny-comic-hp-left; 
     clip-path: polygon(0.35% 16.11%, 33% 21%, 68.16% 6.95%, 90.91% 61.8%, 62.32% 87.64%, 9.08% 98.13%);
     border: 50px #000 solid;
-    -webkit-animation: bunny-comic-hp-left-morph 5s ease-in-out both;
-            animation: bunny-comic-hp-left-morph 5s ease-in-out both;
+    -webkit-animation: bunny-comic-hp-left-morph 7s ease-in-out both;
+            animation: bunny-comic-hp-left-morph 7s ease-in-out both;
             animation-iteration-count: infinite;
    
-}
-
-.bunny-comic-hp-right-bottom { 
-    grid-area: bunny-comic-hp-right-bottom; 
-    clip-path: polygon(4.74% 16.85%, 31.29% 18.72%, 88.02% 0%, 70.11% 58.80%, 12.48% 92.51%);
-    border: 35px #000 solid;
 }
 
 .bunny-comic-hp-right-top { 
     grid-area: bunny-comic-hp-right-top; 
     clip-path: polygon(0.35% 16.11%, 33% 21%, 68.16% 6.95%, 90.91% 61.8%, 62.32% 87.64%, 9.08% 98.13%);
     border: 45px #000 solid;
+    -webkit-animation: bunny-comic-hp-right-top-morph 5s ease-in-out both;
+            animation: bunny-comic-hp-right-top-morph 5s ease-in-out both;
+            animation-iteration-count: infinite;
+}
+
+.bunny-comic-hp-right-bottom { 
+    grid-area: bunny-comic-hp-right-bottom; 
+    clip-path: polygon(4.74% 16.85%, 31.29% 18.72%, 88.02% 0%, 70.11% 58.80%, 12.48% 92.51%);
+    border: 35px #000 solid;
+    -webkit-animation: bunny-comic-hp-right-bottom-morph 10s ease-in-out both;
+            animation: bunny-comic-hp-right-bottom-morph 10s ease-in-out both;
+            animation-iteration-count: infinite;
 }
 
 .bunny-comic-page-turn {
