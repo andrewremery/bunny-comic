@@ -1,0 +1,166 @@
+@-webkit-keyframes bunny-comic-page-turn {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      -webkit-transform-origin: left bottom;
+              transform-origin: left bottom;
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+      -webkit-transform-origin: left bottom;
+              transform-origin: left bottom;
+    }
+  }
+  @keyframes bunny-comic-page-turn {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      -webkit-transform-origin: left bottom;
+              transform-origin: left bottom;
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+      -webkit-transform-origin: left bottom;
+              transform-origin: left bottom;
+    }
+  }
+  
+  @-webkit-keyframes bunny-comic-hp-left-morph {
+    0% {
+        border: 50px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 25px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        width: 80%;
+        transform: rotate(5deg);
+    }
+    75% {
+        border: 25px #000 solid;
+    }
+    100% {
+        border: 50px #000 solid;
+        width: 100%
+    }
+  }
+
+  @keyframes bunny-comic-hp-left-morph {
+    0% {
+        border: 50px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 25px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        width: 80%;
+        transform: rotate(5deg);
+    }
+    75% {
+        border: 25px #000 solid;
+    }
+    100% {
+        border: 50px #000 solid;
+        width: 100%
+    }
+  }
+
+  @-webkit-keyframes bunny-comic-hp-right-top-morph {
+    0% {
+        border: 45px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 25px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        transform: rotate(-7deg);
+        width: 90%;
+    }
+    75% {
+        border: 25px #000 solid;
+    }
+    100% {
+        border: 45px #000 solid;
+        width: 100%;
+    }
+  }
+
+  @keyframes bunny-comic-hp-right-top-morph {
+    0% {
+        border: 45px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 25px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        transform: rotate(-7deg);
+        width: 90%;
+    }
+    75% {
+        border: 25px #000 solid;
+    }
+    100% {
+        border: 45px #000 solid;
+        width: 100%;
+    }
+  }
+
+  @-webkit-keyframes bunny-comic-hp-right-bottom-morph {
+    0% {
+        border: 35px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 15px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        transform: rotate(7deg);
+        width: 80%;
+    }
+    75% {
+        border: 15px #000 solid;
+    }
+    100% {
+        border: 35px #000 solid;
+        width: 100%;
+    }
+  }
+
+  @keyframes bunny-comic-hp-right-bottom-morph {
+    0% {
+        border: 35px #000 solid;
+        width: 100%;
+    }
+    25% {
+        border: 15px #000 solid;
+    }
+    50% {
+        border: 0px #000 solid;
+        transform: rotate(7deg);
+        width: 80%;
+    }
+    75% {
+        border: 15px #000 solid;
+    }
+    100% {
+        border: 35px #000 solid;
+        width: 100%;
+    }
+  }
+
+  .bunny-comic-page-turn {
+    -webkit-animation: bunny-comic-page-turn 1.25s ease-out both;
+            animation: bunny-comic-page-turn 1.25s ease-out both;
+            //animation-iteration-count: infinite;
+}

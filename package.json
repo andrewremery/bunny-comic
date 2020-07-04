@@ -1,7 +1,7 @@
 {
     "name": "bunny-comic",
     "version": "1.0.0",
-    "description": "Comic book style them for Bunny Brew Portfolio",
+    "description": "Comic book style theme for Bunny Brew Portfolio",
     "main": "index.php",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,12 +11,12 @@
         "url": "git+https://github.com/arevisual/bunny-comic.git"
     },
     "keywords": [
-        "comic",
-        "book",
+        "Comic",
+        "Book",
         "WordPress",
         "Theme",
         "Responsiv",
-        "grid"
+        "Grid"
     ],
     "author": "ARE Visual (Andrew R Emery)",
     "license": "ISC",
